@@ -23,45 +23,50 @@
 
 <body>
   <div>
-    <!-- start heaader section -->
-    <div class="header__section container-fluid">
-      <div class="nav">
-        <a href=""><img src="./assets/svg/logo.svg" alt="" /></a>
-      </div>
-      <div class="row">
-        <div class="col-sm -12 col-xl-5">
-          <div class="header__title">QR Code Generator</div>
-          <div class="header__describe">
-            Manage all of your codes in one place using our free QR code
-            generator and scanner app
-          </div>
-          <div class="header__button">
-            <a href=""><img src="./assets/svg/buttons/app_store.svg" alt="" /></a>
-            <a href=""><img src="./assets/svg/buttons/google_play.svg" alt="" /></a>
-          </div>
-          <div class="header__button__mobile container-fluid">
-            <div class="row">
-              <div class="col-6">
-                <a href=""><img src="./assets/svg/buttons/app_store.svg" alt="" /></a>
-              </div>
-              <div class="col-6">
-                <a href=""><img src="./assets/svg/buttons/google_play.svg" alt="" /></a>
+
+    <!-- start header section -->
+    <div class="header">
+      <div class="header__section container-fluid">
+        <div class="nav">
+          <a href=""><img src="./assets/svg/logo.svg" alt="" /></a>
+        </div>
+        <div class="row">
+          <div class="col-sm -12 col-xl-5">
+            <div class="header__title">QR Code Generator</div>
+            <div class="header__describe">
+              Manage all of your codes in one place using our free QR code
+              generator and scanner app
+            </div>
+            <div class="header__button">
+              <a href=""><img src="./assets/svg/buttons/app_store.svg" alt="" /></a>
+              <a href=""><img src="./assets/svg/buttons/google_play.svg" alt="" /></a>
+            </div>
+            <div class="header__button__mobile container-fluid text-center">
+              <div class="row">
+                <div class="col-6">
+                  <a href=""><img src="./assets/svg/buttons/app_store.svg" alt="" /></a>
+                </div>
+                <div class="col-6">
+                  <a href=""><img src="./assets/svg/buttons/google_play.svg" alt="" /></a>
+                </div>
               </div>
             </div>
+            <div class="header__link">
+              <a href=""><img src="./assets/svg/buttons/down_now.svg" alt="" /></a>
+            </div>
           </div>
-          <div class="header__link">
-            <a href=""><img src="./assets/svg/buttons/down_now.svg" alt="" /></a>
+          <div class="col-xl-1"></div>
+          <div class="col-sm -12 col-xl-6 text-right header__phone">
+            <img src="./assets/svg/phone.svg" width="35%" alt="">
           </div>
         </div>
-        <div class="col-xl-1"></div>
-        <div class="col-sm -12 col-xl-6"></div>
+      </div>
+
+      <div class="header__wave">
+        <img src="./assets/svg/header_wave.svg" width="100%" alt="" />
       </div>
     </div>
-    <!-- end heaader section -->
-
-    <div class="header__wave">
-      <img src="./assets/svg/header_wave.svg" width="100%" alt="" />
-    </div>
+    <!-- end header section -->
 
     <!-- start content section -->
     <div class="content__section container-fluid">
@@ -235,6 +240,12 @@
             <span class="upload__text">Upload files (.jpg, .pdf, .mp3, .docx, .pptx)</span>
           </div>
         </div>
+        <div class="left__arrow">
+          <img src="./assets/svg/icons/arrow.svg" alt="">
+        </div>
+        <!-- <div class="down__arrow">
+          <img src="./assets/svg/icons/down_arrow.svg" alt="">
+        </div> -->
         <div class="content__right col-lg-5">
           <div class="right__header text-center">
             <img src="./assets/svg/content_qr.svg" width="232px" alt="" />
@@ -539,6 +550,66 @@
                 </div>
               </div>
             </div>
+            <div class="create__card create__ipad mobile__hide">
+              <div class="row">
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/link.svg" alt="" />
+                    <span class="link__name">Link</span>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/text.svg" alt="" />
+                    <span class="link__name">Text</span>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                    <span class="link__name">Email</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/location.svg" alt="" />
+                    <span class="link__name">Location</span>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
+                    <span class="link__name">Zoom</span>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
+                    <span class="link__name">Zoom</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
+                    <span class="link__name">V-card</span>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
+                    <span class="link__name">Event</span>
+                  </a>
+                </div>
+                <div class="col-4">
+                </div>
+              </div>
+            </div>
             <div class="create__detail">
               <div class="create__header">Enter details</div>
               <div class="create__body">
@@ -684,7 +755,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2"></div>
+          <div class="col-lg-2">
+            <div class="center__progress text-center">
+              <div class="number mx-auto">1</div>
+              <div class="line"></div>
+              <div class="number mx-auto">2</div>
+              <div class="line"></div>
+              <div class="number mx-auto">3</div>
+            </div>
+          </div>
           <div class="col-lg-5 laptop__hide">
             <div class="create__detail">
               <div class="create__header">Select the type of QR Code</div>

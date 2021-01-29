@@ -1,10 +1,12 @@
 .content__section {
-  /* padding: 20px 0 180px 0; */
+  padding-top: 20px;
   padding-bottom: 180px;
   background-color: #31a1d3;
+  margin-top: -1px;
 }
 .content__section .content__body {
   padding: 0 50px;
+  position: relative;
 }
 .content__left {
   padding: 2.813rem 3.438rem;
@@ -383,9 +385,44 @@ input:checked + .slider:before {
   .create__card__mobile {
     display: none;
   }
+  .create__ipad {
+    display: none;
+  }
+  .down__arrow {
+    display: none;
+  }
+  .left__arrow {
+    z-index: 10;
+    position: absolute;
+    right: 40.5%;
+    top: 50%;
+  }
+  .center__progress {
+    margin-top: 72px;
+  }
+  .center__progress .number {
+    background-color: #1565d8;
+    font-family: "HK Grotesk";
+    border-radius: 50px;
+    border: 1px solid;
+    font-size: 50px;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+  }
+  .center__progress .line {
+    border-right: 1px solid #1565D8;
+    height: 180px;
+    background-color: #1565D8;
+    width: 2px;
+    margin: 10px 0 10px 49%;
+  }
 }
 
 @media (max-width: 768px) {
+  .center__progress {
+    display: none;
+  }
   .laptop__hide {
     display: none;
   }
@@ -395,6 +432,18 @@ input:checked + .slider:before {
   .content__right {
     margin-top: 15px;
   }
+  .create__header {
+    text-align: center;
+  }
+  .left__arrow {
+    display: none;
+  }
+  /* .down__arrow {
+    z-index: 10;
+    position: absolute;
+    right: 45%;
+    top: 137%;
+  } */
 }
 
 /* content section style */
@@ -408,6 +457,9 @@ input:checked + .slider:before {
     float: left;
     background-color: #e0e0e0;
     margin: 0 auto;
+  }
+  .create__card__mobile {
+    display: none;
   }
 }
 
@@ -451,7 +503,7 @@ input:checked + .slider:before {
   }
   .left__footer__center {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0 !important;
   }
   .left__footer__center .upload__text {
     font-size: 12px;
@@ -499,10 +551,9 @@ input:checked + .slider:before {
   .create__card__mobile {
     padding: 15px 5px;
   }
-  /* .create__card__mobile .row .col-6 {
-    padding-right: 0;
-    padding-left: 12px;
-  } */
+  .create__ipad {
+    display: none;
+  }
   .create__card__footer {
     margin-top: 15px;
   }

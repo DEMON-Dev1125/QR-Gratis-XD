@@ -22,6 +22,11 @@
   margin-top: 4.313rem;
 }
 /* header section style */
+@media screen and (max-width: 1024px) {
+  .header__phone {
+    display: none;
+  }
+}
 @media screen and (min-width: 425px) {
   .header__button__mobile {
     display: none;
@@ -37,6 +42,7 @@
     padding: 0 15px !important;
   }
   .header__title {
+    margin-top: 15px;
     font-size: 35px;
     line-height: 35px;
   }
@@ -59,5 +65,12 @@
   }
   .header__link img {
     width: 45%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__title {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
