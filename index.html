@@ -1,952 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QR</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.css"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/js/bootstrap-colorpicker.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/js/bootstrap-colorpicker.js"></script>
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/header.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/footer.css" />
-</head>
-
-<body>
-  <div>
-
-    <!-- start header section -->
-    <div class="header">
-      <div class="header__section container-fluid">
-        <div class="nav">
-          <a href=""><img src="./assets/svg/logo.svg" alt="" /></a>
+  <body>
+    <div>
+      <!-- start header section -->
+      <div class="header">
+        <div class="header__section container-fluid">
+          <div class="nav">
+            <a href=""><img src="./assets/svg/logo.svg" alt="" /></a>
+          </div>
+          <div class="row">
+            <div class="col-sm -12 col-xl-5">
+              <div class="header__title">QR Code Generator</div>
+              <div class="header__describe">
+                Manage all of your codes in one place using our free QR code
+                generator and scanner app
+              </div>
+              <div class="header__button">
+                <a href="">
+                  <img src="./assets/svg/buttons/app_store.svg" alt="" />
+                </a>
+                <a href="">
+                  <img src="./assets/svg/buttons/google_play.svg" alt="" />
+                </a>
+              </div>
+              <div class="header__button__mobile container-fluid text-center">
+                <div class="row">
+                  <div class="col-6">
+                    <a href="">
+                      <img src="./assets/svg/buttons/app_store.svg" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a href="">
+                      <img src="./assets/svg/buttons/google_play.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__link">
+                <a href="">
+                  <img src="./assets/svg/buttons/down_now.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-1"></div>
+            <div class="col-sm -12 col-xl-6 text-right header__phone">
+              <img src="./assets/svg/phone.svg" width="35%" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-sm -12 col-xl-5">
-            <div class="header__title">QR Code Generator</div>
-            <div class="header__describe">
-              Manage all of your codes in one place using our free QR code
-              generator and scanner app
+
+        <div class="header__wave">
+          <img src="./assets/svg/header_wave.svg" width="100%" alt="" />
+        </div>
+      </div>
+      <!-- end header section -->
+
+      <!-- start content section -->
+      <div class="content__section container-fluid">
+        <div class="row content__body">
+          <div class="content__left col-lg-7">
+            <div class="left__header">
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/link.svg" alt="" />
+                <span class="link__name">Link</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/text.svg" alt="" />
+                <span class="link__name">Text</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                <span class="link__name">Email</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/location.svg" alt="" />
+                <span class="link__name">Location</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/phone.svg" alt="" />
+                <span class="link__name">Phone</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                <span class="link__name">SMS</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/whatsapp.svg" alt="" />
+                <span class="link__name">Whatsapp</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
+                <span class="link__name">Zoom</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
+                <span class="link__name">Zoom</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
+                <span class="link__name">V-card</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
+                <span class="link__name">Event</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/paypal.svg" alt="" />
+                <span class="link__name">Event</span>
+              </a>
+              <a class="link__icon">
+                <img src="./assets/svg/icons/46x46/bitcoin.svg" alt="" />
+                <span class="link__name">Bitcoin</span>
+              </a>
             </div>
-            <div class="header__button">
-              <a href=""><img src="./assets/svg/buttons/app_store.svg" alt="" /></a>
-              <a href=""><img src="./assets/svg/buttons/google_play.svg" alt="" /></a>
-            </div>
-            <div class="header__button__mobile container-fluid text-center">
+            <div class="left__header__mobile">
               <div class="row">
                 <div class="col-6">
-                  <a href=""><img src="./assets/svg/buttons/app_store.svg" alt="" /></a>
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/link.svg" alt="" />
+                    <span class="link__name">Link</span>
+                  </a>
                 </div>
                 <div class="col-6">
-                  <a href=""><img src="./assets/svg/buttons/google_play.svg" alt="" /></a>
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/text.svg" alt="" />
+                    <span class="link__name">Text</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                    <span class="link__name">Email</span>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/location.svg" alt="" />
+                    <span class="link__name">Location</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/phone.svg" alt="" />
+                    <span class="link__name">Phone</span>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                    <span class="link__name">SMS</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/whatsapp.svg" alt="" />
+                    <span class="link__name">Whatsapp</span>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
+                    <span class="link__name">Zoom</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
+                    <span class="link__name">Zoom</span>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
+                    <span class="link__name">V-card</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
+                    <span class="link__name">Event</span>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/paypal.svg" alt="" />
+                    <span class="link__name">Event</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <a class="link__icon">
+                    <img src="./assets/svg/icons/46x46/bitcoin.svg" alt="" />
+                    <span class="link__name">Bitcoin</span>
+                  </a>
+                </div>
+                <div class="col-6"></div>
+              </div>
+            </div>
+            <div class="left__body">
+              <div class="link__title">
+                Insert your website, text or draw file here
+              </div>
+              <div class="url">URL</div>
+              <input type="text" placeholder="http://" />
+            </div>
+            <div class="left__footer">
+              <img src="./assets/svg/icons/upload.svg" alt="" />
+              <span class="upload__text">
+                Upload files (.jpg, .pdf, .mp3, .docx, .pptx)
+              </span>
+            </div>
+          </div>
+          <div class="left__arrow">
+            <img src="./assets/svg/icons/arrow.svg" alt="" />
+          </div>
+          <!-- <div class="down__arrow">
+          <img src="./assets/svg/icons/down_arrow.svg" alt="">
+        </div> -->
+          <div class="content__right col-lg-5">
+            <div class="right__header text-center">
+              <img src="./assets/svg/content_qr.svg" width="232px" alt="" />
+            </div>
+            <div class="right__body">
+              <div id="accordionExample" class="accordion">
+                <!-- Accordion item 1 -->
+                <div class="card">
+                  <div id="headingOne" class="card-header bg-accordion">
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                        class="d-block position-relative text-white collapsible-link"
+                      >
+                        Options
+                      </a>
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                    class="collapse show"
+                  >
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p class="option__title">Size</p>
+                          <select name="size" id="size">
+                            <option value="400">400</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <p class="option__title">Precision</p>
+                          <select name="procition" id="procition">
+                            <option value="medium">M - Medium</option>
+                            <option value="small">S - Small</option>
+                            <option value="big">B - Big</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p class="option__title">Background</p>
+                          <div id="cp-component" class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text input-group-addon">
+                                <i></i>
+                              </span>
+                            </div>
+                            <input
+                              type="text"
+                              value="#FFFFFF"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="option__footer">
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider round"></span>
+                            </label>
+                            Transparent background
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p class="option__title">Foreground</p>
+                          <div id="foreground" class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text input-group-addon">
+                                <i></i>
+                              </span>
+                            </div>
+                            <input
+                              type="text"
+                              value="#000000"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="option__footer">
+                            <label class="switch">
+                              <input type="checkbox" checked />
+                              <span class="slider round"></span>
+                            </label>
+                            Gradient
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <p class="option__title">Second color</p>
+                          <div id="secondcolor" class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text input-group-addon">
+                                <i></i>
+                              </span>
+                            </div>
+                            <input
+                              type="text"
+                              value="#8900D5"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="option__footer">
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider round"></span>
+                            </label>
+                            Radial
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p class="option__title">Marker border</p>
+                          <div id="markerborder" class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text input-group-addon">
+                                <i></i>
+                              </span>
+                            </div>
+                            <input
+                              type="text"
+                              value="#000000"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="option__footer">
+                            <label class="switch">
+                              <input type="checkbox" checked />
+                              <span class="slider round"></span>
+                            </label>
+                            Custom marker color
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <p class="option__title">Marker center</p>
+                          <div id="markercenter" class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text input-group-addon">
+                                <i></i>
+                              </span>
+                            </div>
+                            <input
+                              type="text"
+                              value="#000000"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion item 2 -->
+                <div class="card mt-1">
+                  <div id="headingTwo" class="card-header bg-accordion">
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                        class="d-block position-relative collapsed text-white collapsible-link"
+                      >
+                        Logo
+                      </a>
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body">
+                      <div class="input-group upload__input">
+                        <input
+                          type="text"
+                          placeholder="Upload your logo or select a watermark"
+                          class="form-control"
+                        />
+                        <div class="input-group-prepend">
+                          <span class="input-group-text input-group-addon">
+                            <img src="./assets/svg/icons/upload.svg" alt="" />
+                          </span>
+                        </div>
+                      </div>
+                      <div class="icons container-fluid">
+                        <div class="close__icon">
+                          <i class="fa fa-close"></i>
+                        </div>
+                        <div class="logo__icons">
+                          <img src="./assets/svg/icons/27x27/link.svg" alt="" />
+                          <img src="./assets/svg/icons/27x27/mail.svg" alt="" />
+                          <img
+                            src="./assets/svg/icons/27x27/location.svg"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/svg/icons/27x27/whatsapp.svg"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/svg/icons/27x27/camera.svg"
+                            alt=""
+                          />
+                          <img src="./assets/svg/icons/27x27/wifi.svg" alt="" />
+                          <img
+                            src="./assets/svg/icons/27x27/bitcoin.svg"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/svg/icons/27x27/skype.svg"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/svg/icons/27x27/vcard.svg"
+                            alt=""
+                          />
+                          <img src="./assets/svg/icons/27x27/edit.svg" alt="" />
+                          <img
+                            src="./assets/svg/icons/27x27/paypal.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="logo__footer">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                        </label>
+                        Remove background behind logo
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="header__link">
-              <a href=""><img src="./assets/svg/buttons/down_now.svg" alt="" /></a>
+            <div class="right__footer">
+              <div class="row">
+                <div class="col-6 col-sm-6 col-lg-12 col-xl-6 download">
+                  <a href="">
+                    <img src="./assets/svg/buttons/down_first.svg" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-12 col-xl-6 vector">
+                  <a href="">
+                    <img src="./assets/svg/buttons/vector_first.svg" alt="" />
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-xl-1"></div>
-          <div class="col-sm -12 col-xl-6 text-right header__phone">
-            <img src="./assets/svg/phone.svg" width="35%" alt="">
           </div>
         </div>
       </div>
+      <!-- end content section -->
 
-      <div class="header__wave">
-        <img src="./assets/svg/header_wave.svg" width="100%" alt="" />
-      </div>
-    </div>
-    <!-- end header section -->
-
-    <!-- start content section -->
-    <div class="content__section container-fluid">
-      <div class="row content__body">
-        <div class="content__left col-lg-7">
-          <div class="left__header">
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/link.svg" alt="" />
-              <span class="link__name">Link</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/text.svg" alt="" />
-              <span class="link__name">Text</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
-              <span class="link__name">Email</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/location.svg" alt="" />
-              <span class="link__name">Location</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/phone.svg" alt="" />
-              <span class="link__name">Phone</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
-              <span class="link__name">SMS</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/whatsapp.svg" alt="" />
-              <span class="link__name">Whatsapp</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
-              <span class="link__name">Zoom</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
-              <span class="link__name">Zoom</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
-              <span class="link__name">V-card</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
-              <span class="link__name">Event</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/paypal.svg" alt="" />
-              <span class="link__name">Event</span>
-            </a>
-            <a class="link__icon">
-              <img src="./assets/svg/icons/46x46/bitcoin.svg" alt="" />
-              <span class="link__name">Bitcoin</span>
-            </a>
+      <!-- start center section -->
+      <div class="center__section">
+        <div class="container">
+          <div class="center__title text-center">
+            How can I create a free QR code?
           </div>
-          <div class="left__header__mobile">
-            <div class="row">
-              <div class="col-6">
+          <div class="center__describe text-center">
+            Discover how in just three step
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <div class="create__detail mobile__hide">
+                <div class="create__header">Select the type of QR Code</div>
+                <div class="create__body">
+                  You can choose between Website, vCard, Text, Email, SMS,
+                  Twitter, WiFi and Bitcoin. However, these free QR Codes are
+                  not editable or trackable.
+                </div>
+              </div>
+              <div class="create__card link__card">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/link.svg" alt="" />
                   <span class="link__name">Link</span>
                 </a>
-              </div>
-              <div class="col-6">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/text.svg" alt="" />
                   <span class="link__name">Text</span>
                 </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-6">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
                   <span class="link__name">Email</span>
                 </a>
-              </div>
-              <div class="col-6">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/location.svg" alt="" />
                   <span class="link__name">Location</span>
                 </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-6">
-                <a class="link__icon">
-                  <img src="./assets/svg/icons/46x46/phone.svg" alt="" />
-                  <span class="link__name">Phone</span>
-                </a>
-              </div>
-              <div class="col-6">
-                <a class="link__icon">
-                  <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
-                  <span class="link__name">SMS</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-6">
-                <a class="link__icon">
-                  <img src="./assets/svg/icons/46x46/whatsapp.svg" alt="" />
-                  <span class="link__name">Whatsapp</span>
-                </a>
-              </div>
-              <div class="col-6">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
                   <span class="link__name">Zoom</span>
                 </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-6">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
                   <span class="link__name">Zoom</span>
                 </a>
-              </div>
-              <div class="col-6">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
                   <span class="link__name">V-card</span>
                 </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-6">
                 <a class="link__icon">
                   <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
                   <span class="link__name">Event</span>
                 </a>
               </div>
-              <div class="col-6">
-                <a class="link__icon">
-                  <img src="./assets/svg/icons/46x46/paypal.svg" alt="" />
-                  <span class="link__name">Event</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-6">
-                <a class="link__icon">
-                  <img src="./assets/svg/icons/46x46/bitcoin.svg" alt="" />
-                  <span class="link__name">Bitcoin</span>
-                </a>
-              </div>
-              <div class="col-6">
-              </div>
-            </div>
-          </div>
-          <div class="left__body">
-            <div class="link__title">
-              Insert your website, text or draw file here
-            </div>
-            <div class="url">URL</div>
-            <input type="text" placeholder="http://" />
-          </div>
-          <div class="left__footer">
-            <img src="./assets/svg/icons/upload.svg" alt="" />
-            <span class="upload__text">Upload files (.jpg, .pdf, .mp3, .docx, .pptx)</span>
-          </div>
-        </div>
-        <div class="left__arrow">
-          <img src="./assets/svg/icons/arrow.svg" alt="">
-        </div>
-        <!-- <div class="down__arrow">
-          <img src="./assets/svg/icons/down_arrow.svg" alt="">
-        </div> -->
-        <div class="content__right col-lg-5">
-          <div class="right__header text-center">
-            <img src="./assets/svg/content_qr.svg" width="232px" alt="" />
-          </div>
-          <div class="right__body">
-            <div id="accordionExample" class="accordion">
-              <!-- Accordion item 1 -->
-              <div class="card">
-                <div id="headingOne" class="card-header bg-accordion">
-                  <h6 class="mb-0 font-weight-bold">
-                    <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                      aria-controls="collapseOne"
-                      class="d-block position-relative text-white collapsible-link">Options</a>
-                  </h6>
+              <div class="create__card create__card__mobile mobile__hide">
+                <div class="row">
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/link.svg" alt="" />
+                      <span class="link__name">Link</span>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/text.svg" alt="" />
+                      <span class="link__name">Text</span>
+                    </a>
+                  </div>
                 </div>
-                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
-                  class="collapse show">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p class="option__title">Size</p>
-                        <select name="size" id="size">
-                          <option value="400">400</option>
-                          <option value="100">100</option>
-                          <option value="200">200</option>
-                          <option value="300">300</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="option__title">Precision</p>
-                        <select name="procition" id="procition">
-                          <option value="medium">M - Medium</option>
-                          <option value="small">S - Small</option>
-                          <option value="big">B - Big</option>
-                        </select>
-                      </div>
-                    </div>
 
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p class="option__title">Background</p>
-                        <div id="cp-component" class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text input-group-addon"><i></i></span>
-                          </div>
-                          <input type="text" value="#FFFFFF" class="form-control" />
-                        </div>
-                        <div class="option__footer">
-                          <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider round"></span>
-                          </label>
-                          Transparent background
-                        </div>
-                      </div>
-                    </div>
+                <div class="row">
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                      <span class="link__name">Email</span>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/location.svg" alt="" />
+                      <span class="link__name">Location</span>
+                    </a>
+                  </div>
+                </div>
 
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p class="option__title">Foreground</p>
-                        <div id="foreground" class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text input-group-addon"><i></i></span>
-                          </div>
-                          <input type="text" value="#000000" class="form-control" />
-                        </div>
-                        <div class="option__footer">
-                          <label class="switch">
-                            <input type="checkbox" checked />
-                            <span class="slider round"></span>
-                          </label>
-                          Gradient
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="option__title">Second color</p>
-                        <div id="secondcolor" class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text input-group-addon"><i></i></span>
-                          </div>
-                          <input type="text" value="#8900D5" class="form-control" />
-                        </div>
-                        <div class="option__footer">
-                          <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider round"></span>
-                          </label>
-                          Radial
-                        </div>
-                      </div>
-                    </div>
+                <div class="row">
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
+                      <span class="link__name">Zoom</span>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
+                      <span class="link__name">Zoom</span>
+                    </a>
+                  </div>
+                </div>
 
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p class="option__title">Marker border</p>
-                        <div id="markerborder" class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text input-group-addon"><i></i></span>
-                          </div>
-                          <input type="text" value="#000000" class="form-control" />
-                        </div>
-                        <div class="option__footer">
-                          <label class="switch">
-                            <input type="checkbox" checked />
-                            <span class="slider round"></span>
-                          </label>
-                          Custom marker color
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="option__title">Marker center</p>
-                        <div id="markercenter" class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text input-group-addon"><i></i></span>
-                          </div>
-                          <input type="text" value="#000000" class="form-control" />
-                        </div>
-                      </div>
-                    </div>
+                <div class="row">
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
+                      <span class="link__name">V-card</span>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
+                      <span class="link__name">Event</span>
+                    </a>
                   </div>
                 </div>
               </div>
-
-              <!-- Accordion item 2 -->
-              <div class="card mt-1">
-                <div id="headingTwo" class="card-header bg-accordion">
-                  <h6 class="mb-0 font-weight-bold">
-                    <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                      aria-controls="collapseTwo"
-                      class="d-block position-relative collapsed text-white collapsible-link">Logo</a>
-                  </h6>
+              <div class="create__card create__ipad mobile__hide">
+                <div class="row">
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/link.svg" alt="" />
+                      <span class="link__name">Link</span>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/text.svg" alt="" />
+                      <span class="link__name">Text</span>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                      <span class="link__name">Email</span>
+                    </a>
+                  </div>
                 </div>
-                <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
-                  <div class="card-body">
-                    <div class="input-group upload__input">
-                      <input type="text" placeholder="Upload your logo or select a watermark" class="form-control" />
+
+                <div class="row">
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/location.svg" alt="" />
+                      <span class="link__name">Location</span>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
+                      <span class="link__name">Zoom</span>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
+                      <span class="link__name">Zoom</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
+                      <span class="link__name">V-card</span>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a class="link__icon">
+                      <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
+                      <span class="link__name">Event</span>
+                    </a>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+              </div>
+              <div class="create__detail">
+                <div class="create__header">Enter details</div>
+                <div class="create__body">
+                  Fill in the fields with all the necessary information. Insert
+                  a link, text, contact details or any other information. Then
+                  select “Create QR Code”.
+                </div>
+              </div>
+              <div class="create__card mobile__hide">
+                <div class="link__title">
+                  Insert your website, text or draw file here
+                </div>
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="http://"
+                />
+                <div class="left__footer__center">
+                  <img src="./assets/svg/icons/upload.svg" alt="" />
+                  <span class="upload__text">
+                    Upload files (.jpg, .pdf, .mp3, .docx, .pptx)
+                  </span>
+                </div>
+              </div>
+              <div class="create__detail mobile__hide">
+                <div class="create__header">Download the QR Code</div>
+                <div class="create__body">
+                  You have the option of leaving the default design black and
+                  white or adding colors and a frame to help attract more scans.
+                  After that, download your QR Code.
+                </div>
+              </div>
+              <div class="create__card">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="option__title">Size</p>
+                    <select name="size" id="size">
+                      <option value="400">400</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="300">300</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="option__title">Precision</p>
+                    <select name="procition" id="procition">
+                      <option value="medium">M - Medium</option>
+                      <option value="small">S - Small</option>
+                      <option value="big">B - Big</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="option__title">Background</p>
+                    <div id="cp-component1" class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text input-group-addon">
-                          <img src="./assets/svg/icons/upload.svg" alt="" /></span>
+                          <i></i>
+                        </span>
                       </div>
+                      <input type="text" value="#FFFFFF" class="form-control" />
                     </div>
-                    <div class="icons container-fluid">
-                      <div class="close__icon">
-                        <i class="fa fa-close"></i>
-                      </div>
-                      <div class="logo__icons">
-                        <img src="./assets/svg/icons/27x27/link.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/mail.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/location.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/whatsapp.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/camera.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/wifi.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/bitcoin.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/skype.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/vcard.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/edit.svg" alt="" />
-                        <img src="./assets/svg/icons/27x27/paypal.svg" alt="" />
-                      </div>
-                    </div>
-                    <div class="logo__footer">
+                    <div class="option__footer">
                       <label class="switch">
                         <input type="checkbox" />
                         <span class="slider round"></span>
                       </label>
-                      Remove background behind logo
+                      Transparent background
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="option__title">Foreground</p>
+                    <div id="foreground1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#000000" class="form-control" />
+                    </div>
+                    <div class="option__footer">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                      Gradient
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="option__title">Second color</p>
+                    <div id="secondcolor1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#8900D5" class="form-control" />
+                    </div>
+                    <div class="option__footer">
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                      Radial
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="option__title">Marker border</p>
+                    <div id="markerborder1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#000000" class="form-control" />
+                    </div>
+                    <div class="option__footer">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                      Custom marker color
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="option__title">Marker center</p>
+                    <div id="markercenter1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#000000" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="create__card__footer">
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-lg-12 col-xl-6 download">
+                      <a href="" class="download">
+                        <img src="./assets/svg/buttons/down_two.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-12 col-xl-6 vector">
+                      <a href="" class="vector">
+                        <img src="./assets/svg/buttons/vector_two.svg" alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="right__footer">
-            <div class="row">
-              <div class="col-6 col-sm-6 col-lg-12 col-xl-6 download">
-                <a href="">
-                  <img src="./assets/svg/buttons/down_first.svg" alt="" />
+            <div class="col-lg-2">
+              <div class="center__progress text-center">
+                <div class="number mx-auto">1</div>
+                <div class="line"></div>
+                <div class="number mx-auto">2</div>
+                <div class="line"></div>
+                <div class="number mx-auto">3</div>
+              </div>
+            </div>
+            <div class="col-lg-5 laptop__hide">
+              <div class="create__detail">
+                <div class="create__header">Select the type of QR Code</div>
+                <div class="create__body">
+                  You can choose between Website, vCard, Text, Email, SMS,
+                  Twitter, WiFi and Bitcoin. However, these free QR Codes are
+                  not editable or trackable.
+                </div>
+              </div>
+              <div class="create__card mobile__hide">
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/link.svg" alt="" />
+                  <span class="link__name">Link</span>
+                </a>
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/text.svg" alt="" />
+                  <span class="link__name">Text</span>
+                </a>
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
+                  <span class="link__name">Email</span>
+                </a>
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/location.svg" alt="" />
+                  <span class="link__name">Location</span>
+                </a>
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
+                  <span class="link__name">Zoom</span>
+                </a>
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
+                  <span class="link__name">Zoom</span>
+                </a>
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
+                  <span class="link__name">V-card</span>
+                </a>
+                <a class="link__icon">
+                  <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
+                  <span class="link__name">Event</span>
                 </a>
               </div>
-              <div class="col-6 col-sm-6 col-lg-12 col-xl-6 vector">
-                <a href="">
-                  <img src="./assets/svg/buttons/vector_first.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end content section -->
-
-    <!-- start center section -->
-    <div class="center__section">
-      <div class="container">
-        <div class="center__title text-center">
-          How can I create a free QR code?
-        </div>
-        <div class="center__describe text-center">
-          Discover how in just three step
-        </div>
-        <div class="row">
-          <div class="col-12 col-lg-5">
-            <div class="create__detail mobile__hide">
-              <div class="create__header">Select the type of QR Code</div>
-              <div class="create__body">
-                You can choose between Website, vCard, Text, Email, SMS,
-                Twitter, WiFi and Bitcoin. However, these free QR Codes are
-                not editable or trackable.
-              </div>
-            </div>
-            <div class="create__card link__card">
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/link.svg" alt="" />
-                <span class="link__name">Link</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/text.svg" alt="" />
-                <span class="link__name">Text</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
-                <span class="link__name">Email</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/location.svg" alt="" />
-                <span class="link__name">Location</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
-                <span class="link__name">Zoom</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
-                <span class="link__name">Zoom</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
-                <span class="link__name">V-card</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
-                <span class="link__name">Event</span>
-              </a>
-            </div>
-            <div class="create__card create__card__mobile mobile__hide">
-              <div class="row">
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/link.svg" alt="" />
-                    <span class="link__name">Link</span>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/text.svg" alt="" />
-                    <span class="link__name">Text</span>
-                  </a>
+              <div class="create__detail mobile__hide">
+                <div class="create__header">Enter details</div>
+                <div class="create__body">
+                  Fill in the fields with all the necessary information. Insert
+                  a link, text, contact details or any other information. Then
+                  select “Create QR Code”.
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
-                    <span class="link__name">Email</span>
-                  </a>
+              <div class="create__card">
+                <div class="link__title">
+                  Insert your website, text or draw file here
                 </div>
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/location.svg" alt="" />
-                    <span class="link__name">Location</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
-                    <span class="link__name">Zoom</span>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
-                    <span class="link__name">Zoom</span>
-                  </a>
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="http://"
+                />
+                <div class="left__footer__center">
+                  <img src="./assets/svg/icons/upload.svg" alt="" />
+                  <span class="upload__text">
+                    Upload files (.jpg, .pdf, .mp3, .docx, .pptx)
+                  </span>
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
-                    <span class="link__name">V-card</span>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
-                    <span class="link__name">Event</span>
-                  </a>
+              <div class="create__detail">
+                <div class="create__header">Download the QR Code</div>
+                <div class="create__body">
+                  You have the option of leaving the default design black and
+                  white or adding colors and a frame to help attract more scans.
+                  After that, download your QR Code.
                 </div>
               </div>
-            </div>
-            <div class="create__card create__ipad mobile__hide">
-              <div class="row">
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/link.svg" alt="" />
-                    <span class="link__name">Link</span>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/text.svg" alt="" />
-                    <span class="link__name">Text</span>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
-                    <span class="link__name">Email</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/location.svg" alt="" />
-                    <span class="link__name">Location</span>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
-                    <span class="link__name">Zoom</span>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
-                    <span class="link__name">Zoom</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
-                    <span class="link__name">V-card</span>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="link__icon">
-                    <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
-                    <span class="link__name">Event</span>
-                  </a>
-                </div>
-                <div class="col-4">
-                </div>
-              </div>
-            </div>
-            <div class="create__detail">
-              <div class="create__header">Enter details</div>
-              <div class="create__body">
-                Fill in the fields with all the necessary information. Insert
-                a link, text, contact details or any other information. Then
-                select “Create QR Code”.
-              </div>
-            </div>
-            <div class="create__card mobile__hide">
-              <div class="link__title">
-                Insert your website, text or draw file here
-              </div>
-              <input class="search__input" type="text" placeholder="http://" />
-              <div class="left__footer__center">
-                <img src="./assets/svg/icons/upload.svg" alt="" />
-                <span class="upload__text">Upload files (.jpg, .pdf, .mp3, .docx, .pptx)</span>
-              </div>
-            </div>
-            <div class="create__detail mobile__hide">
-              <div class="create__header">Download the QR Code</div>
-              <div class="create__body">
-                You have the option of leaving the default design black and
-                white or adding colors and a frame to help attract more scans.
-                After that, download your QR Code.
-              </div>
-            </div>
-            <div class="create__card">
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Size</p>
-                  <select name="size" id="size">
-                    <option value="400">400</option>
-                    <option value="100">100</option>
-                    <option value="200">200</option>
-                    <option value="300">300</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <p class="option__title">Precision</p>
-                  <select name="procition" id="procition">
-                    <option value="medium">M - Medium</option>
-                    <option value="small">S - Small</option>
-                    <option value="big">B - Big</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Background</p>
-                  <div id="cp-component1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#FFFFFF" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" />
-                      <span class="slider round"></span>
-                    </label>
-                    Transparent background
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Foreground</p>
-                  <div id="foreground1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#000000" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" checked />
-                      <span class="slider round"></span>
-                    </label>
-                    Gradient
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <p class="option__title">Second color</p>
-                  <div id="secondcolor1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#8900D5" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" />
-                      <span class="slider round"></span>
-                    </label>
-                    Radial
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Marker border</p>
-                  <div id="markerborder1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#000000" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" checked />
-                      <span class="slider round"></span>
-                    </label>
-                    Custom marker color
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <p class="option__title">Marker center</p>
-                  <div id="markercenter1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#000000" class="form-control" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="create__card__footer">
+              <div class="create__card mobile__hide">
                 <div class="row">
-                  <div class="col-6 col-sm-6 col-lg-12 col-xl-6 download">
-                    <a href="" class="download">
-                      <img src="./assets/svg/buttons/down_two.svg" alt="" />
-                    </a>
+                  <div class="col-md-6">
+                    <p class="option__title">Size</p>
+                    <select name="size" id="size">
+                      <option value="400">400</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="300">300</option>
+                    </select>
                   </div>
-                  <div class="col-6 col-sm-6 col-lg-12 col-xl-6 vector">
-                    <a href="" class="vector">
-                      <img src="./assets/svg/buttons/vector_two.svg" alt="" />
-                    </a>
+                  <div class="col-md-6">
+                    <p class="option__title">Precision</p>
+                    <select name="procition" id="procition">
+                      <option value="medium">M - Medium</option>
+                      <option value="small">S - Small</option>
+                      <option value="big">B - Big</option>
+                    </select>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="center__progress text-center">
-              <div class="number mx-auto">1</div>
-              <div class="line"></div>
-              <div class="number mx-auto">2</div>
-              <div class="line"></div>
-              <div class="number mx-auto">3</div>
-            </div>
-          </div>
-          <div class="col-lg-5 laptop__hide">
-            <div class="create__detail">
-              <div class="create__header">Select the type of QR Code</div>
-              <div class="create__body">
-                You can choose between Website, vCard, Text, Email, SMS,
-                Twitter, WiFi and Bitcoin. However, these free QR Codes are
-                not editable or trackable.
-              </div>
-            </div>
-            <div class="create__card mobile__hide">
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/link.svg" alt="" />
-                <span class="link__name">Link</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/text.svg" alt="" />
-                <span class="link__name">Text</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/mail.svg" alt="" />
-                <span class="link__name">Email</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/location.svg" alt="" />
-                <span class="link__name">Location</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/camera.svg" alt="" />
-                <span class="link__name">Zoom</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/wifi.svg" alt="" />
-                <span class="link__name">Zoom</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/vcard.svg" alt="" />
-                <span class="link__name">V-card</span>
-              </a>
-              <a class="link__icon">
-                <img src="./assets/svg/icons/46x46/edit.svg" alt="" />
-                <span class="link__name">Event</span>
-              </a>
-            </div>
-            <div class="create__detail mobile__hide">
-              <div class="create__header">Enter details</div>
-              <div class="create__body">
-                Fill in the fields with all the necessary information. Insert
-                a link, text, contact details or any other information. Then
-                select “Create QR Code”.
-              </div>
-            </div>
-            <div class="create__card">
-              <div class="link__title">
-                Insert your website, text or draw file here
-              </div>
-              <input class="search__input" type="text" placeholder="http://" />
-              <div class="left__footer__center">
-                <img src="./assets/svg/icons/upload.svg" alt="" />
-                <span class="upload__text">Upload files (.jpg, .pdf, .mp3, .docx, .pptx)</span>
-              </div>
-            </div>
-            <div class="create__detail">
-              <div class="create__header">Download the QR Code</div>
-              <div class="create__body">
-                You have the option of leaving the default design black and
-                white or adding colors and a frame to help attract more scans.
-                After that, download your QR Code.
-              </div>
-            </div>
-            <div class="create__card mobile__hide">
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Size</p>
-                  <select name="size" id="size">
-                    <option value="400">400</option>
-                    <option value="100">100</option>
-                    <option value="200">200</option>
-                    <option value="300">300</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <p class="option__title">Precision</p>
-                  <select name="procition" id="procition">
-                    <option value="medium">M - Medium</option>
-                    <option value="small">S - Small</option>
-                    <option value="big">B - Big</option>
-                  </select>
-                </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Background</p>
-                  <div id="cp-component1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#FFFFFF" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" />
-                      <span class="slider round"></span>
-                    </label>
-                    Transparent background
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Foreground</p>
-                  <div id="foreground1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#000000" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" checked />
-                      <span class="slider round"></span>
-                    </label>
-                    Gradient
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <p class="option__title">Second color</p>
-                  <div id="secondcolor1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#8900D5" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" />
-                      <span class="slider round"></span>
-                    </label>
-                    Radial
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="option__title">Marker border</p>
-                  <div id="markerborder1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#000000" class="form-control" />
-                  </div>
-                  <div class="option__footer">
-                    <label class="switch">
-                      <input type="checkbox" checked />
-                      <span class="slider round"></span>
-                    </label>
-                    Custom marker color
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <p class="option__title">Marker center</p>
-                  <div id="markercenter1" class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text input-group-addon"><i></i></span>
-                    </div>
-                    <input type="text" value="#000000" class="form-control" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="create__card__footer">
                 <div class="row">
-                  <div class="col-6 col-sm-6 col-lg-12 col-xl-6 download">
-                    <a href="" class="download">
-                      <img src="./assets/svg/buttons/down_two.svg" alt="" />
-                    </a>
+                  <div class="col-md-6">
+                    <p class="option__title">Background</p>
+                    <div id="cp-component1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#FFFFFF" class="form-control" />
+                    </div>
+                    <div class="option__footer">
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                      Transparent background
+                    </div>
                   </div>
-                  <div class="col-6 col-sm-6 col-lg-12 col-xl-6 vector">
-                    <a href="" class="vector">
-                      <img src="./assets/svg/buttons/vector_two.svg" alt="" />
-                    </a>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="option__title">Foreground</p>
+                    <div id="foreground1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#000000" class="form-control" />
+                    </div>
+                    <div class="option__footer">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                      Gradient
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="option__title">Second color</p>
+                    <div id="secondcolor1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#8900D5" class="form-control" />
+                    </div>
+                    <div class="option__footer">
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                      Radial
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="option__title">Marker border</p>
+                    <div id="markerborder1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#000000" class="form-control" />
+                    </div>
+                    <div class="option__footer">
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                      Custom marker color
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="option__title">Marker center</p>
+                    <div id="markercenter1" class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text input-group-addon">
+                          <i></i>
+                        </span>
+                      </div>
+                      <input type="text" value="#000000" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="create__card__footer">
+                  <div class="row">
+                    <div class="col-6 col-sm-6 col-lg-12 col-xl-6 download">
+                      <a href="" class="download">
+                        <img src="./assets/svg/buttons/down_two.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-12 col-xl-6 vector">
+                      <a href="" class="vector">
+                        <img src="./assets/svg/buttons/vector_two.svg" alt="" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -954,98 +1082,120 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- end center section -->
+      <!-- end center section -->
 
-  <!-- start footer section -->
-  <div class="footer__section">
-    <div class="container">
-      <div class="row footer__up">
-        <div class="col-sm-2"></div>
-        <div class="col-12 col-sm-8">
-          <div class="footer__title">Get a our QR Lock app now</div>
-          <div class="footer__describe">
-            No contact, no set-up costs, just awesome way to organise your
-            money.
+      <!-- start footer section -->
+      <div class="footer__section">
+        <div class="container">
+          <div class="row footer__up">
+            <div class="col-sm-2"></div>
+            <div class="col-12 col-sm-8">
+              <div class="footer__title">Get a our QR Lock app now</div>
+              <div class="footer__describe">
+                No contact, no set-up costs, just awesome way to organise your
+                money.
+              </div>
+              <div class="row link__area">
+                <div class="col-lg-2"></div>
+                <div class="col-12 col-md-6 col-lg-4 link__free">
+                  <a href="">
+                    <img src="./assets/svg/buttons/try_btn_white.svg" alt="" />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 link__store">
+                  <a href="">
+                    <img
+                      src="./assets/svg/buttons/visit_app_store.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 link__free__out">
+                  <a href="">
+                    <img src="./assets/svg/buttons/try_free_white.svg" alt="" />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 link__white__store">
+                  <a href="">
+                    <img
+                      src="./assets/svg/buttons/visit_app_white.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row footer_scan">
+                <div class="col-lg-2"></div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="qr__title">Or scan the QR code below</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center">
+                  <img src="./assets/svg/footer_qr.svg" width="140px" alt="" />
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
           </div>
-          <div class="row link__area">
-            <div class="col-sm-12">
-              <a href="">
-                <img src="./assets/svg/buttons/vist_app_store.svg" alt="">
-              </a>
+          <div class="footer__logo">
+            <a href=""><img src="./assets/svg/footer_logo.svg" alt="" /></a>
+          </div>
+          <div class="footer__down row">
+            <div class="col-6 col-md-4 footer__link">
+              <a href="">Term & Conditions</a>
+            </div>
+            <div class="col-6 col-md-4 footer__link">
+              <a href="">Privacy Policy</a>
+            </div>
+            <div class="col-6 col-md-4 footer__link">
+              <a href="">more</a>
             </div>
           </div>
-          <div class="row footer_scan">
-            <div class="col-lg-2"></div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="qr__title">Or scan the QR code below</div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-              <img src="./assets/svg/footer_qr.svg" width="140px" alt="" />
-            </div>
-            <div class="col-lg-2"></div>
+          <div class="social__icons text-center">
+            <a href="#"><img src="./assets/svg/icons/google.svg" alt="" /></a>
+            <a href="#"><img src="./assets/svg/icons/twitter.svg" alt="" /></a>
+            <a href="#"><img src="./assets/svg/icons/linkedin.svg" alt="" /></a>
+            <a href="#">
+              <img src="./assets/svg/icons/instagram.svg" alt="" />
+            </a>
           </div>
-        </div>
-        <div class="col-sm-2"></div>
-      </div>
-      <div class="footer__logo">
-        <a href=""><img src="./assets/svg/footer_logo.svg" alt="" /></a>
-      </div>
-      <div class="footer__down row">
-        <div class="col-6 col-md-4 footer__link">
-          <a href="">Term & Conditions</a>
-        </div>
-        <div class="col-6 col-md-4 footer__link">
-          <a href="">Privacy Policy</a>
-        </div>
-        <div class="col-6 col-md-4 footer__link">
-          <a href="">more</a>
+          <div class="copyright">Copyright © 2020. Crafted with love.</div>
         </div>
       </div>
-      <div class="social__icons text-center">
-        <a href="#"><img src="./assets/svg/icons/google.svg" alt="" /></a>
-        <a href="#"><img src="./assets/svg/icons/twitter.svg" alt="" /></a>
-        <a href="#"><img src="./assets/svg/icons/linkedin.svg" alt="" /></a>
-        <a href="#"><img src="./assets/svg/icons/instagram.svg" alt="" /></a>
-      </div>
-      <div class="copyright">Copyright © 2020. Crafted with love.</div>
+      <!-- end footer section -->
     </div>
-  </div>
-  <!-- end footer section -->
-  </div>
-</body>
-<script type="text/javascript">
-  $(function () {
-    $("#cp-component").colorpicker();
-  });
-  $(function () {
-    $("#foreground").colorpicker();
-  });
-  $(function () {
-    $("#secondcolor").colorpicker();
-  });
-  $(function () {
-    $("#markerborder").colorpicker();
-  });
-  $(function () {
-    $("#markercenter").colorpicker();
-  });
-  $(function () {
-    $("#cp-component1").colorpicker();
-  });
-  $(function () {
-    $("#foreground1").colorpicker();
-  });
-  $(function () {
-    $("#secondcolor1").colorpicker();
-  });
-  $(function () {
-    $("#markerborder1").colorpicker();
-  });
-  $(function () {
-    $("#markercenter1").colorpicker();
-  });
-</script>
-
+  </body>
+  <script type="text/javascript">
+    $(function () {
+      $('#cp-component').colorpicker()
+    })
+    $(function () {
+      $('#foreground').colorpicker()
+    })
+    $(function () {
+      $('#secondcolor').colorpicker()
+    })
+    $(function () {
+      $('#markerborder').colorpicker()
+    })
+    $(function () {
+      $('#markercenter').colorpicker()
+    })
+    $(function () {
+      $('#cp-component1').colorpicker()
+    })
+    $(function () {
+      $('#foreground1').colorpicker()
+    })
+    $(function () {
+      $('#secondcolor1').colorpicker()
+    })
+    $(function () {
+      $('#markerborder1').colorpicker()
+    })
+    $(function () {
+      $('#markercenter1').colorpicker()
+    })
+  </script>
 </html>
